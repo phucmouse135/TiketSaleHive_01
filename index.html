@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Giao diện web cơ bản</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">MySite</h1>
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="#home">Trang chủ</a></li>
+          <li><a href="#features">Tính năng</a></li>
+          <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container">
+      <h2>Chào mừng đến với giao diện cơ bản</h2>
+      <p>Đây là mẫu trang web tĩnh, responsive và dễ dàng tuỳ chỉnh.</p>
+      <a class="btn" href="#contact">Liên hệ ngay</a>
+    </div>
+  </section>
+
+  <section id="features" class="features container">
+    <div class="card">
+      <h3>Responsive</h3>
+      <p>Giao diện hiển thị tốt trên di động và desktop.</p>
+    </div>
+    <div class="card">
+      <h3>Nhẹ</h3>
+      <p>Tệp tĩnh, tải nhanh và dễ tuỳ chỉnh.</p>
+    </div>
+    <div class="card">
+      <h3>Dễ mở rộng</h3>
+      <p>Thêm phần mới chỉ bằng HTML/CSS/JS.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact container">
+    <h2>Liên hệ</h2>
+    <form id="contactForm">
+      <label for="name">Tên</label>
+      <input id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required>
+
+      <label for="message">Tin nhắn</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button class="btn" type="submit">Gửi</button>
+      <p id="formMsg" class="form-msg" aria-live="polite"></p>
+    </form>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 MySite. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
